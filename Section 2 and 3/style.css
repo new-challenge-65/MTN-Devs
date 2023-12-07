@@ -17,14 +17,17 @@ body {
     margin: auto;
 }
 
-.task-boxies {
+.task-boxies,
+.activities-box {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 16px;
+    margin-bottom: 20px;
 }
 
-.card {
+.card,
+.active-part {
     margin: 0.5em;
     text-align: right;
     flex-grow: 1;
@@ -39,6 +42,7 @@ body {
     background-image: url(icons/immd.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-size: 120px 120px;
     background-origin: border-box;
 }
 
@@ -48,6 +52,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-origin: border-box;
+    background-size: 120px 120px;
 }
 
 .card span {
