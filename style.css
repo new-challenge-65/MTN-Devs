@@ -22,40 +22,52 @@ body {
   align-content: center;
   width: fit-content;
   flex-wrap: nowrap;
+  margin: 0 auto;
 }
 /* fiels css code START */
-.bi-grid{
- color:  #f1416c;
- 
+.bi-grid {
+  color: #f1416c;
 }
-.svg-icon{
-  color: #009ef7;
+/* fiels toolbar and submenu css code START */
+.fiels-toolbar {
+  background-color: white;
+  position: relative;
+}
+.fiels-toolbar:hover {
+  background-color: #009ef7;
+}
+.fiels-toolbar button {
+  border: none;
+}
 
+/*fiels toolbar css code END*/
+.svg-icon {
+  color: #009ef7;
 }
-.bi-stack{
+.bi-stack {
   color: #ffc700;
 }
-.bi-briefcase{
-  color:#7239ea ;
+.bi-briefcase {
+  color: #7239ea;
 }
 .fa-basket-shopping {
   color: #50cd89;
-  
 }
 table {
   vertical-align: middle;
   /* padding-right: 90px; */
 }
 table * {
-  padding: 10px;
+  /* padding: 10px; */
 }
-.fiels{
+.fiels {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  background: rgb(253 247 247);
+  background: rgb(253, 249, 249);
   border-radius: 15px;
-  margin-left: 120px
+  margin-left: 40px;
+  width: 600px;
 }
 
 .fiels-header {
@@ -77,9 +89,7 @@ table * {
   align-items: flex-start;
   font-weight: 600;
 }
-.fiels-toolbar button{
-  border: none;
-}
+
 .fiels-title > p {
   font-size: 1.35rem;
   margin: 0;
@@ -97,7 +107,7 @@ tr {
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  width:777px;
+  /* width:777px; */
 }
 td {
   font-weight: 600;
@@ -108,7 +118,7 @@ td {
   color: #009ef7;
 }
 .fiels-second-column {
-  margin-left: 120px;
+  margin-left: 0.7rem;
 }
 .fiels-thrid-column {
   opacity: 0.55;
@@ -116,30 +126,55 @@ td {
 .fiels-four-column {
   opacity: 0.55;
 }
+.fiels-first-column svg {
+  padding: 0;
+}
+.fiels-first-column {
+}
+.fiels-table * {
+  padding: 11px 11px 11px 17px;
+}
 /* fiels css code   END */
+.table-type * {
+  padding: 6px 3px 3px 3px;
+}
+.table-type svg:hover {
+  color: #009ef7;
+}
+.table-type svg {
+  background-color: #c0ccd337;
+  padding: 12px;
+  border-radius: 12px;
+}
 .boy-18 {
   width: 50px;
   height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 .girl-7 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
   width: 50px;
   height: 50px;
 }
 .girl-25 {
   width: 50px;
   height: 50px;
-
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
-.income-writers{
-  background: rgb(253 247 247);
+.income-writers {
+  background: rgb(245, 240, 240);
   border-radius: 15px;
+  width: 600px;
 }
 .income-writers-header {
   display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .income-writers-header p {
   font-weight: 600;
@@ -162,6 +197,9 @@ td {
   margin: 0;
   padding: 0;
 }
+.income-writers-second-column a:hover {
+  color: #009ef7;
+}
 .income-writers-second-column a,
 span {
   padding: 0;
@@ -177,8 +215,10 @@ span {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: 0;
+  padding: 0 28px 0 46px;
+  font-size: 14px;
 }
+
 .income-writers-third-column span:first-of-type {
   font-size: 0.75rem;
   opacity: 0.45;
@@ -187,9 +227,11 @@ span {
   display: flex;
   flex-direction: column;
   padding: 0;
+  padding: 0 28px 0 46px;
 }
+
 .income-writers-four-column {
-  padding: 0;
+  padding: 0 28px 0 46px;
 }
 .firt-percent {
   color: #f1416c;
@@ -209,11 +251,19 @@ span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 200px;
-  height: 200px;
+  width: 189px;
+  height: 223px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-between;
+  position: absolute;
+  right: -56px;
+  z-index: 1;
+  padding: 8px 25px 15px 0px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 50px 20px rgba(82, 63, 105, 0.15);
+  border-radius: 0.75rem;
+  font-size: 14px;
 }
 .menu-sub-dropdown a {
   color: #252f4a;
@@ -227,12 +277,17 @@ span {
 .information-circle:hover::before {
   content: "یک نام هدف را برای استفاده و" " مرجع در آینده مشخص کنید";
   display: flex;
-  width: 100px;
-  height: 63px;
+
+  height: 43px;
   font-size: 11px;
   z-index: 2;
   position: absolute;
   background-color: #f2e3e3;
+  border-radius: 10px;
+    left: 24px;
+    text-align: center;
+    margin: -20px 0px;
+    width: 218px;
 }
 .menu-sub-dropdown-seconditem {
   display: flex;
@@ -242,40 +297,64 @@ span {
 }
 
 .menu-sub-dropdown {
-  background-color: #ffffff;
-  box-shadow: 0px 0px 50px 20px rgba(82, 63, 105, 0.15);
-  border-radius: 0.75rem;
 }
 .menu-sub-dropdown-fouritem-links {
   display: none;
+  position: absolute;
+  background: #fffefe;
+  left: 200px;
+  bottom: 50px;
+  box-shadow: 0px 0px 20px 15px rgba(82, 63, 105, 0.15);
+  border-radius: 15px;
+}
+.menu-sub-dropdown-fouritem-links ul {
+  padding: 0 0 0 0;
+}
+.menu-sub-dropdown-fouritem-links {
 }
 .menu-sub-dropdown-fouritem:hover .menu-sub-dropdown-fouritem-links {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0;
+  padding: 0 13px 0px 0;
+  align-content: flex-start;
+  width: 158px;
+  height: 180px;
 }
-
+.svg-icon {
+  padding: 0 118px 0px 0px;
+}
 
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
-.fiels-toolbar {
-  position: relative;
-}
 .hidden {
   display: none;
 }
-.menu-sub-dropdown {
-  position: absolute;
-  right: 0;
-  z-index: 1;
-}
+
 .active-btn {
   background: #dbdfe9;
   padding: 2px 20px;
   border-radius: 10px;
-
 }
+.status-checkbox {
+  padding-bottom: 10px;
+}
+.status-checkbox::after {
+  content: "";
+  position: absolute;
+  opacity: 0.1;
+  right: 0;
+  bottom: 44px;
+  width: 170px;
+  border: 1px solid black !important;
+}
+/* dorp menu of section 4 css code  END */
 @media only screen and (max-width: 900px) {
   .section-four {
     flex-direction: column;
