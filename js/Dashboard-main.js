@@ -1,14 +1,15 @@
-const toolbarbtn =document.querySelector('.fiels-toolbar button')
-const toolbarDropdown = document.querySelector('.menu-sub-dropdown')
+const toolbarbtn = document.querySelector(".fiels-toolbar button");
+const toolbarDropdown = document.querySelector(".menu-sub-dropdown");
 
-toolbarbtn.addEventListener('click',()=>{
-    console.log('first')
-    toolbarDropdown.classList.toggle('hidden')
-})
-
+toolbarbtn.addEventListener("click", () => {
+  console.log("first");
+  toolbarDropdown.classList.toggle("hidden");
+});
 
 const depositType = document.querySelectorAll(".table-type");
-const depositbtn = document.querySelectorAll(".income-writers-header div ul li");
+const depositbtn = document.querySelectorAll(
+  ".income-writers-header div ul li"
+);
 // ================================================================================================
 for (let i = 0; i < depositbtn.length; i++) {
   depositbtn[i].addEventListener("click", () => {
@@ -27,3 +28,21 @@ for (let i = 0; i < depositbtn.length; i++) {
     depositType[i].classList.remove("hidden");
   });
 }
+
+// function tagvim footer
+document.addEventListener("DOMContentLoaded", function () {
+  let calendarEl = document.getElementById("calendar");
+  let calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: "dayGridMonth,",
+    // events: "/api/demo-feeds/events.json",
+    editable: true,
+    selectable: true,
+    headerToolbar: {
+      start: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+      center: "title",
+      // end: 'prevYear,prev,next,nextYear'
+    },
+  });
+
+  calendar.render();
+});

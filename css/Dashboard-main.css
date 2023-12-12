@@ -111,8 +111,6 @@ table * {
   opacity: 0.5;
 }
 
-.fiels-body {
-}
 
 tr {
   display: flex;
@@ -383,3 +381,46 @@ span {
 /* properties button modereat tagvim header footer [end] */
 /* properties container header tagvim footer [end] */
 /* properties header tagvim footer [end] */
+
+/* properties calender [start] */
+#calendar {
+  max-width: 1155px;
+  margin: 0 auto;
+  margin-top: 1px;
+  margin-bottom: 25px;
+  background-color: #fdfdfd;
+  border: 29px solid white;
+  border-radius: 5px;
+}
+/* properties header tagvin [start] */
+.fc-header-toolbar {
+  display: flex;
+  flex-direction: row-reverse;
+}
+/* properties header tagvin [end] */
+
+/* properties kol button ha header tavim [start] */
+.fc .fc-button {
+  padding: 0.75rem 1.25rem;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0.75rem;
+  vertical-align: middle;
+  font-weight: 500;
+}
+/* properties color button ha header tagvim [start] */
+.fc .fc-button-primary {
+  background-color: #fffffff5;
+  color: #78899d;
+}
+/* peroperties hover click button ha header tagvim [start] */
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #ececed;
+  color: #071437;
+}
+/* peroperties hover click button ha header tagvim [end] */
+.fc-prev-button {
+  background-color: #fffffff5;
+}
+/* properties kol button ha header tavim [end] */
+/* properties calender [end] */
