@@ -1,0 +1,289 @@
+@font-face {
+    font-family: iransans;
+    src: url(fonts/5c53f1a72f61b5b51e2ea79a22ebc38b.woff);
+}
+
+:root {
+    --blueLight: #009ef7;
+    --green: #50cd89;
+    --redLight: #f1416c;
+    --grayLight: #8b8b8b;
+    --white: #ffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f0f0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    font-family: iransans;
+    max-width: 1200px;
+    padding: 1em;
+    margin: auto;
+}
+
+
+.activities-box {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.active-part {
+    margin: 0.5em;
+    text-align: right;
+    flex-grow: 1;
+    flex-basis: 160px;
+    background-color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 0.7em;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+/* #myChart {} */
+.header-card .right-header h3 {
+    margin-bottom: -6px;
+    margin-top: 0;
+}
+
+.header-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 1em;
+}
+
+.header-card .right-header span {
+    font-size: 0.8em;
+    color: var(--grayLight);
+    margin-bottom: 0;
+}
+
+.active-part .header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.header-card .left-header {
+    margin-bottom: 0;
+}
+
+.left-header button {
+    border: none;
+    border-radius: 0.6em;
+    background-color: var(--white);
+    transition: 0.2s;
+}
+
+.left-header button:hover {
+    background-color: #dfeff890;
+}
+
+.left-header button i {
+    padding: 10px 8px;
+    color: var(--blueLight);
+}
+
+.main-card {
+    margin-top: 1.8rem;
+}
+
+.main-box {
+    display: inline-flex;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.main-box i {
+    margin-left: 0.6em;
+    padding: 0.8em;
+    border-radius: 0.6em;
+}
+
+.main-box .text h5 {
+    margin-top: -1.7em;
+    color: var(--grayLight);
+}
+
+.comisiyon i {
+    color: var(--redLight);
+    background-color: #f1416d12;
+}
+
+.writer i {
+    color: #7239ea;
+    background-color: #7139ea11;
+}
+
+.timePrice i {
+    color: var(--blueLight);
+    background-color: #009cf718;
+}
+
+.averageSuggestion i {
+    color: var(--green);
+    background-color: #50cd8816;
+}
+
+.main-box {
+    align-items: center;
+}
+
+.bottom-Body-card {
+    position: relative;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.bottom-Body-card:before {
+    content: "";
+    position: absolute;
+    right: 51px;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    background-color: #99a1b736;
+}
+
+.bottom-Body-card .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.bottom-Body-card p {
+    color: var(--grayLight);
+    font-size: 0.8em;
+    margin-right: 0.9em;
+}
+
+.time {
+    display: flex;
+    margin-top: 1em;
+}
+
+.time i {
+    margin-right: 0.3em;
+}
+
+.fa1 i {
+    color: #ffc700;
+}
+
+.fa2 i {
+    color: var(--green);
+}
+
+.fa3 i {
+    color: var(--redLight);
+}
+
+.fa4 i {
+    color: var(--blueLight);
+}
+
+.fa5 i {
+    color: var(--redLight);
+}
+
+.fa6 i {
+    color: var(--green);
+
+}
+
+.BlueHeader {}
+
+.active-part:nth-child(1) h3 {
+    color: var(--white);
+}
+
+.active-part:nth-child(1) {
+    background-color: var(--blueLight);
+}
+
+.active-part:nth-child(1) #btn {
+    background-color: var(--blueLight);
+}
+
+.active-part:nth-child(1) i {
+    color: var(--white);
+}
+
+.main-text {
+    text-align: center;
+    color: #f1f0f0;
+    margin-top: 1.5em;
+}
+
+.main-text h2 {
+    margin-top: -0.7em;
+}
+
+.body-card-grow {
+    background-color: var(--white);
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.g1,
+.g2,
+.g3,
+.g4,
+.g5,
+.g6,
+.g7 {
+
+    margin-bottom: -1.5em;
+    margin-left: 3em;
+}
+
+.g8 {
+    margin-left: 3em;
+
+}
+
+.grow-content:nth-child(1) i {
+    color: #b4b4b4;
+    background-color: rgba(194, 194, 194, 0.144);
+}
+
+.main-box:nth-child(2):hover h4 {
+    color: #009ef7;
+    transition: 0.3s;
+}
+
+.apexcharts-xaxistooltip {
+    display: none;
+}
+
+/* اعداد پایین */
+.apexcharts-xaxis-texts-g {
+    display: none;
+}
+
+/* خط های پایین */
+.apexcharts-inner line {
+    display: none;
+}
+
+.apexcharts-inner line:nth-of-type(1),
+.apexcharts-inner line:nth-of-type(2) {
+    display: flex !important;
+    visibility: hidden;
+}
+
+#myChart {
+    margin-bottom: -3.7em;
+    margin-left: -2.8em;
+    margin-right: -3.5em;
+}

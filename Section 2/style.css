@@ -1,0 +1,75 @@
+@font-face {
+    font-family: iransans;
+    src: url(fonts/5c53f1a72f61b5b51e2ea79a22ebc38b.woff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f0f0;
+    box-sizing: border-box;
+}
+
+.container2 {
+    font-family: iransans;
+    max-width: 1200px;
+    padding: 1em;
+    margin: auto;
+}
+
+.task-boxies {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: 0.5em;
+    text-align: right;
+    flex-grow: 1;
+    flex-basis: 160px;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 2rem;
+    border-radius: 0.7em;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.card:nth-child(2) {
+    background-image: url(icons/immd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 120px 120px;
+    background-origin: border-box;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+    background-image: url(icons/imdd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    background-size: 120px 120px;
+}
+
+.card span {
+    color: #009ef7;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card h2 {
+    font-size: 1.3em;
+    color: #78829d;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card h2:hover {
+    color: #009ef7;
+}
+
+.card p {
+    font-size: 0.9em;
+}
