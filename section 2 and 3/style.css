@@ -18,11 +18,73 @@ body {
     box-sizing: border-box;
 }
 
-
-.container {
+.container2 {
     font-family: iransans;
     max-width: 1200px;
     padding: 1em;
+    margin: auto;
+}
+
+.task-boxies {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    margin: 0.5em;
+    text-align: right;
+    flex-grow: 1;
+    flex-basis: 160px;
+    background-color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 0.7em;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.card:nth-child(2) {
+    background-image: url(icons/immd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 120px 120px;
+    background-origin: border-box;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+    background-image: url(icons/imdd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    background-size: 120px 120px;
+}
+
+.card span {
+    color: var(--blueLight);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card h2 {
+    font-size: 1.3em;
+    color: var(--grayLight);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card h2:hover {
+    color: var(--blueLight);
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+.container3 {
+    padding: 1em;
+    font-family: iransans;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -45,7 +107,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
-/* #myChart {} */
 .header-card .right-header h3 {
     margin-bottom: -6px;
     margin-top: 0;
@@ -53,7 +114,6 @@ body {
 
 .header-card {
     position: relative;
-    overflow: hidden;
     width: 100%;
     padding-top: 1em;
 }
@@ -98,7 +158,6 @@ body {
 .main-box {
     display: inline-flex;
     margin-left: 1em;
-    margin-bottom: 1em;
 }
 
 .main-box i {
@@ -198,8 +257,6 @@ body {
 
 }
 
-.BlueHeader {}
-
 .active-part:nth-child(1) h3 {
     color: var(--white);
 }
@@ -283,7 +340,121 @@ body {
 }
 
 #myChart {
+    margin-top: 1.7em;
     margin-bottom: -3.7em;
     margin-left: -2.8em;
     margin-right: -3.5em;
+}
+
+button {
+    cursor: pointer;
+    position: relative;
+}
+
+/* dorp menu of section 4 css code  START */
+.menu-sub-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 189px;
+    height: 223px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    position: absolute;
+    right: -56px;
+    padding: 1em;
+    background-color: var(--white);
+    box-shadow: 0px 0px 50px 20px rgba(82, 63, 105, 0.15);
+    border-radius: 0.75rem;
+    font-size: 14px;
+    text-decoration: none;
+    visibility: hidden;
+    transition: 1s;
+
+}
+
+.menu-sub-dropdown .menu-sub-dropdown a {
+    color: #252f4a;
+    text-align: right;
+}
+
+.menu-sub-dropdown>span:first-of-type {
+    opacity: 0.45;
+    font-size: 0.95rem;
+    color: #252f4a;
+}
+
+.information-circle:hover::before {
+    content: "یک نام هدف را برای استفاده و" " مرجع در آینده مشخص کنید";
+    display: flex;
+    height: 43px;
+    font-size: 11px;
+    z-index: 2;
+    position: absolute;
+    background-color: #f2e3e3;
+    border-radius: 10px;
+    left: 24px;
+    text-align: center;
+    margin: -20px 0px;
+    width: 218px;
+}
+
+.menu-sub-dropdown-seconditem {
+    display: flex;
+}
+
+.menu-sub-dropdown-seconditem>a:first-of-type {
+    padding-left: 80px;
+}
+
+.menu-sub-dropdown-fouritem-links {
+    display: none;
+    position: absolute;
+    background: var(--white);
+    left: 200px;
+    bottom: 50px;
+    box-shadow: 0px 0px 20px 15px rgba(82, 63, 105, 0.15);
+    border-radius: 15px;
+}
+
+.menu-sub-dropdown-fouritem-links ul {
+    padding: 0 0 0 0;
+}
+
+.menu-sub-dropdown-fouritem:hover .menu-sub-dropdown-fouritem-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0;
+    padding: 0 13px 0px 0;
+    align-content: flex-end;
+    width: 158px;
+    list-style-type: none;
+    text-decoration: none;
+    height: 180px;
+}
+
+.svg-icon {
+    padding: 0 118px 0px 0px;
+}
+
+.status-checkbox {
+    padding-bottom: 10px;
+}
+
+.status-checkbox::after {
+    content: "";
+    position: absolute;
+    opacity: 0.1;
+    right: 0;
+    bottom: 44px;
+    width: 170px;
+    border: 1px solid black !important;
+}
+
+#btn:hover .menu-sub-dropdown {
+    visibility: visible;
 }
