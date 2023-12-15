@@ -22,24 +22,27 @@ display: block;
 }
 .pages-sub-menu{
   display: none;
+  position: absolute;
 }
 .pages:hover .pages-sub-menu{
   display: block;
 }
 .application-sub-menu{
   display: none;
+  position: absolute;
 }
 .application:hover .application-sub-menu{
   display: block;
 }
 .help-sub-menu{
   display: none;
+  position: absolute;
 }
 .help:hover .help-sub-menu{
   display: block;
 }
 .menu-extended{
-  
+  position: absolute;
   display: none;
 }
 .dashboard{
@@ -78,7 +81,13 @@ display: block;
   padding: 1rem 1.5rem;
   margin-left: 0.25rem;
 }
+.menu-arrow-gray-400 >.dashboard ,.pages,.application,.help{
+  padding-left: 44px;
 
+}
+.menu-arrow-gray-400{
+  display: flex;
+}
 /* header END */
 .w-md-375px{
 visibility:hidden
