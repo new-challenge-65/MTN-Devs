@@ -21,8 +21,10 @@ var options = {
 
                 },
             }
-        }
+        },
+
     },
+    colors: ['#d4526e'],
     series: [{
         name: 'sales',
         data: [80, 60, 80, 70, 80, 70, 90, 90, 90],
