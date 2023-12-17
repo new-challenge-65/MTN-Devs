@@ -44,6 +44,13 @@ a {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.helpings {
+  background-color: #ffff;
+  padding: 10px 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+
 .dashboardTitle {
   padding: 0.7em;
   background: #e5e6e979;
