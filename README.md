@@ -5,5 +5,4 @@
 ◉ChartJs: https://www.chartjs.org/ <br>
 ◉Bootstrap: https://getbootstrap.com/
 
-
-
+<img align="center" width="300px" src="image/linegraph.gif">
