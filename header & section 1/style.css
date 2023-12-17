@@ -29,9 +29,7 @@ a {
 .pages:hover .pages-sub-menu {
   display: block;
 }
-.col-lg-8 {
-  /* display: contents; */
-}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -99,7 +97,7 @@ a {
   margin-bottom: 0.75rem !important;
 }
 .application-sub-menu {
-  /* display: none; */
+  display: none;
   position: absolute;
   z-index: 2;
   background-color: white;
@@ -125,6 +123,9 @@ a {
 .w-lg-600px {
   padding: 0 0px 0px 40px;
 }
+
+
+
 .application:hover .application-sub-menu {
   display: block;
 }
@@ -148,14 +149,7 @@ a {
 .dashboard:hover .menu-extended {
   display: block;
 }
-.menu-link:hover {
-}
-.menu-state-primary
-  .menu-item:not(.here)
-  .menu-link:hover:not(.disabled):not(.active):not(.here)
-  .menu-title {
-  /* color: #009ef7; */
-}
+
 .Store,
 .projects,
 .support-center,
@@ -167,17 +161,30 @@ a {
 .case-manager,
 .message-box,
 .chat {
-  display: none;
+  display: block;
   position: absolute;
   right: 120px;
   /* width: 111px; */
   background-color: white;
   /* transition: all 400ms ease; */
   z-index: 111;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms ease;
+}
+
+.menu-title {
+  transition: all 400ms ease;
+ transition-delay: 100ms;
 }
 .menu-title:hover .menu-arrow {
-  display: block;
-  transition: all 400ms ease;
+  opacity: 1;
+  visibility: visible;
+
+}
+.menu-title:hover .Store {
+  opacity: 1;
+  visibility: visible;
 }
 .Store {
   background-color: rgb(255, 255, 255);
@@ -187,8 +194,10 @@ a {
   width: 133px;
 }
 .projects {
-  /* display: block; */
-  background-color: rgb(255, 255, 255);
+  display: block;
+  background-color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
   padding: 22px;
 }
 .projects a {
@@ -237,9 +246,10 @@ a {
 .customers a {
   width: 143px;
 }
+
 .menu-title-gray-700 .menu-item .menu-link .menu-title {
   color: #4b5675;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .h-25px {
   height: 25px;
@@ -450,9 +460,7 @@ a {
 }
 /* Sale statistics icon END */
 /* Sale statistics sub menu START */
-.menu-sub-dropdown {
-  /* display: none; */
-}
+
 /* .menu-sub-dropdown {
   z-index: 107;
   position: fixed;
@@ -548,12 +556,7 @@ select {
   position: relative;
   vertical-align: middle;
 }
-.menu-item {
-}
-.menu {
-  /* position: absolute;
-  top: 61px; */
-}
+
 .trend {
   position: absolute;
   top: 99px;
@@ -673,13 +676,10 @@ select {
   margin-bottom: 0.5rem !important;
 }
 
-element.style {
-}
 .text-warning {
   color: #ffc700 !important;
 }
-.text-warning {
-}
+
 .fs-2x {
   font-size: calc(1.325rem + 0.9vw) !important;
 }
