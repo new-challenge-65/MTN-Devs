@@ -99,9 +99,10 @@ a {
   margin-bottom: 0.75rem !important;
 }
 .application-sub-menu {
-  display: none;
+  /* display: none; */
   position: absolute;
   z-index: 2;
+  background-color: white;
 }
 .row {
   display: flex;
@@ -121,7 +122,7 @@ a {
 .w-lg-500px {
   padding: 0 0px 0px 40px;
 }
-.w-lg-600px{
+.w-lg-600px {
   padding: 0 0px 0px 40px;
 }
 .application:hover .application-sub-menu {
@@ -153,7 +154,88 @@ a {
   .menu-item:not(.here)
   .menu-link:hover:not(.disabled):not(.active):not(.here)
   .menu-title {
-  color: #009ef7;
+  /* color: #009ef7; */
+}
+.Store,
+.projects,
+.support-center,
+.admin-user,
+.contacts,
+.sharing-2,
+.customers,
+.management-invoice,
+.case-manager,
+.message-box,
+.chat {
+  display: none;
+  position: absolute;
+  right: 120px;
+  /* width: 111px; */
+  background-color: white;
+  /* transition: all 400ms ease; */
+  z-index: 111;
+}
+.menu-title:hover .menu-arrow {
+  display: block;
+  transition: all 400ms ease;
+}
+.Store {
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.Store a {
+  width: 133px;
+}
+.projects {
+  /* display: block; */
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.projects a {
+  width: 133px;
+}
+.chat {
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.chat a {
+  width: 133px;
+}
+.message-box {
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.message-box a {
+  width: 133px;
+}
+.case-manager {
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.case-manager a {
+  width: 133px;
+}
+.management-invoice {
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.management-invoice a {
+  width: 133px;
+}
+.profile-submenu {
+  display: none;
+  position: absolute;
+  right: 120px;
+  background-color: white;
+  visibility: hidden;
+  z-index: 111;
+}
+.customers {
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.customers a {
+  width: 143px;
 }
 .menu-title-gray-700 .menu-item .menu-link .menu-title {
   color: #4b5675;
