@@ -108,6 +108,37 @@ a {
   color: rgb(245, 245, 76);
 }
 
+.appMenu {
+  background: #ffff;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+
+}
+
+
+.menuApp {
+  background: #ffff;
+  position: absolute;
+  right: 11.5em;
+  top: 1.3em;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* visibility: hidden; */
+  transition: 0.3s;
+  /* display: none; */
+}
+
+.proje {
+  position: relative;
+
+}
+
+.proje .menuApp {
+  /* visibility: visible; */
+}
+
 /*==============================================*/
 
 
