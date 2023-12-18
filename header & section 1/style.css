@@ -101,6 +101,15 @@ a {
   position: absolute;
   z-index: 2;
   background-color: white;
+  padding: 0px 10px 0 121px;
+  border-radius: 0.75rem;
+    
+    box-shadow:  0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+}
+.menu-sub-lg-dropdown {
+    
+    
+    
 }
 .row {
   display: flex;
@@ -124,10 +133,9 @@ a {
   padding: 0 0px 0px 40px;
 }
 
-
-
 .application:hover .application-sub-menu {
   display: block;
+ 
 }
 .help-sub-menu {
   display: none;
@@ -163,29 +171,137 @@ a {
 .chat {
   display: block;
   position: absolute;
-  right: 120px;
+  right: 272px;
   /* width: 111px; */
   background-color: white;
   /* transition: all 400ms ease; */
   z-index: 111;
   opacity: 0;
   visibility: hidden;
-  transition: all 400ms ease;
+  transition: all 500ms ease;
+  border-radius: 0.75rem;
+box-shadow:  0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+}
+.admin-user{
+  width: 155px;
+}
+.users-submenu{
+  width: 190px;
+  border-radius: 0.75rem;
+  box-shadow:  0px 0px 50px 0px rgba(82, 63, 105, 0.15)
+}
+.access-level-submenu{
+  width: 250px;
+  border-radius: 0.75rem;
+  box-shadow:  0px 0px 50px 0px rgba(82, 63, 105, 0.15)
+}
+.contacts{
+  width: 170px;
+}
+.sharing-2{
+  width: 178px;
+}
+.trainings:hover .trainings-submenu {
+  display: block;
+  right: 151px;
+  position: absolute;
+
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+
+.trainings-submenu {
+  display: none;
+}
+.catalog:hover .catalog-submenu {
+  display: block;
+  right: 151px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+
+.catalog-submenu {
+  display: none;
+}
+.tickets:hover .tickets-submenu {
+  display: block;
+  right: 151px;
+  position: absolute;
+
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.tickets-submenu {
+  display: none;
+}
+.sale:hover .sale-submenu{
+  display: block;
+  right: 151px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.sale-submenu{
+  display: none;
+}
+.customer-submenu{
+  display: none;
+}
+.customer:hover .customer-submenu{
+  display: block;
+  right: 151px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.reports-submenu{
+  display: none;
+}
+.support-center{
+width: 180px;
+}
+.reports:hover .reports-submenu{
+  display: block;
+  right: 151px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.users-submenu{
+  display: none;
+}
+.users:hover .users-submenu{
+  display: block;
+  right: 151px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+}
+.access-level-submenu{
+  display: none;
+}
+.access-level:hover .access-level-submenu{
+  display: block;
+  right: 151px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
 }
 
 .menu-title {
   transition: all 400ms ease;
- transition-delay: 100ms;
+  transition-delay: 100ms;
 }
 .menu-title:hover .menu-arrow {
   opacity: 1;
   visibility: visible;
-
 }
 .menu-title:hover .Store {
   opacity: 1;
   visibility: visible;
 }
+
 .Store {
   background-color: rgb(255, 255, 255);
   padding: 22px;
