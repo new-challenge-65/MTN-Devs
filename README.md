@@ -7,7 +7,7 @@
 ◉FullCalendar: https://fullcalendar.io/ <br>
 ◉FontIcons: https://fontawesome.com/ <br>
 
-<img align="center" width="300px" src="image/linegraph.gif">
+<img align="center" width="300px" src="readme.md-image/linegraph.gif">
 
 #### Members:
 `Mohadese`
