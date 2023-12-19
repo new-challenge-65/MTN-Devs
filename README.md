@@ -11,6 +11,5 @@
 
 #### Members:
 `Mohadese`
-`Mehrdad`
 `Mostafa`
 `Amin`
